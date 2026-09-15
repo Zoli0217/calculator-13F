@@ -1,8 +1,14 @@
 import React from 'react'
+import ThemeContextProvider, { useTheme } from './context/ThemeContextProvider'
+import ThreeStateSwitch from './components/ThreeStateSwitch'
 
 const App = () => {
+  
+
   return (
-    <div>App</div>
+    <ThemeContextProvider>
+      <ThreeStateSwitch/>
+    </ThemeContextProvider>
   )
 }
 

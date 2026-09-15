@@ -63,3 +63,49 @@
   --theme3-text-blue: hsl(198, 20%, 13%);
   --theme3-text-light: hsl(0, 100%, 100%);
 }
+
+.theme1{
+  background-color: var(--theme1-main-bg);
+}
+
+.theme2{
+  background-color: var(--theme2-main-bg);
+}
+
+.theme3{
+  background-color: var(--theme3-main-bg);
+}
+
+.btn{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 210px;
+  height: 80px;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+.dot{
+  border-radius: 50%;
+  background-color: red;
+  width: 70px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.case1 .dot{
+  display: flex;
+  transform: translateX(0);
+
+}
+
+.case2 .dot{
+  display: flex;
+  transform: translateX(70px);
+}
+
+.case3 .dot{
+  display: flex;
+  transform: translateX(140px);
+}
